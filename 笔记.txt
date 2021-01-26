@@ -23,5 +23,117 @@
 	
 	<font color = 'red' size = '5'>...</font>---字体标签
 	
-实体符号
+实体符号：
+	&nbsp;---一个空格
+	&lt;---小于号
+	&gt;---大于号
+	
+表格：
+	<table border="1px" width="50%" height="200px" align = "center">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		
+		<tr align="center">
+			<td>1</td>
+			<td>2</td>
+			<td align="center">3</td>
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		
+	</table>
+
+单元格合并：colspan:列合并 rowspan:行合并
+	<table border="1px" width="50%">
+		<tr>
+			<td>1</td>
+			<td>x</td>  //行合并，删除一个单元格，加上colspan属性 <td colspan="2">xy</td>
+			<td>y</td>                                             
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td> //列合并，删除下边单元格，加上rowspan属性 <td rowspan="2">3y</td>
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		
+	</table>
+	
+表格th标签：th可以代替td做单元格，th中的内容会自动加粗，会自动居中
+	<table border="1px" width="50%">
+		<tr>
+			<td>员工编号</td> <!--<th>员工编号</th>
+			<td>员工姓名</td>     <th>员工姓名</th>
+			<td>员工薪资</td>     <th>员工薪资</th>-->
+		</tr>
+		<tr>
+			<td>3607</td>
+			<td>SMITH</td>
+			<td>800.0</td>
+		</tr>
+		<tr>
+			<td>0527</td>
+			<td>KING</td>
+			<td>3000</td>
+		</tr>
+		
+	</table>
+	
+一个table可以被thead tbody tfoot分割成三部分：
+	<table border="1px" width="50%">
+		<thead>
+			<tr>
+				<td>员工编号</td> 
+				<td>员工姓名</td>     
+				<td>员工薪资</td> 
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>3607</td>
+				<td>SMITH</td>
+				<td>800.0</td>
+			</tr>
+			<tr>
+				<td>0527</td>
+				<td>KING</td>
+				<td>3000</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>x</td>
+				<td>y</td>
+				<td>z</td>
+			</tr>
+		</tfoot>
+		
+	</table>
+
+背景色和背景图片：body标签的bgcolor属性指定背景颜色
+				  body标签的background属性指定背景图片
+				  
+	<body bgcolor="red"></body>
+	<body background="路径"></body>
+
+图片：
+	<img src="路径"></img> //开始标签和结束标签之间没有内容的话，可以直接像如下方式
+	<img src="路径" width="200px" />
+	img标签的属性：src：用来设置图片路径
+				   width：用来指定图片的宽度，高度会等比例缩放
+				   title: 用来设置鼠标悬停时的信息
+				   alt:用来指定当前图片加载失败时候的提示信息
 	
