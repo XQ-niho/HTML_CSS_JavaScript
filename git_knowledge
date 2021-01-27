@@ -8,3 +8,9 @@ git常用命令
 	git commit  // 确认本地缓存区的内容，可以准备push
 	git push   // 提交本地仓库到远程仓库
 	git status   // 确定本地缓存区的状态
+	
+GitHub如何配置SSH Key：
+	https://blog.csdn.net/u013778905/article/details/83501204
+	
+VScode 结合git的全面使用流程（上）：
+	https://blog.csdn.net/weixin_39874202/article/details/107978289
