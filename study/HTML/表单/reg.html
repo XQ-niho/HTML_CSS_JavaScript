@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>用户注册</title>
+</head>
+<body>
+	<form action="170.0.0.1">
+		用户名<input type="text" name="username" />
+		<br>
+		密码<input type="password" name="userpwd" />
+		<br>
+		性别
+			<!-- 同一组单选按钮name需要一致 -->
+			<input type="radio" name="sex" value='0' checked />男
+			<input type="radio" name="sex" value='1' />女
+		<br>
+		兴趣
+			<!-- 复选框 -->
+			<input type="checkbox" name="interest" value="eat" checked />吃
+			<input type="checkbox" name="interest" value="drink" /> 喝
+			<input type="checkbox" name="interest" value="smoke" />抽烟
+		<br>
+		学历
+			<!-- 下拉列表 -->
+			<select name="xueli">
+				<option value="gz">高中</option>
+				<option value="zk" selected>专科</option>
+				<option value="bk">本科</option>
+				<option value="ss">硕士</option>
+			</select>
+		<br>
+		城市
+			<!-- 下拉列表多选 multiple  size:一次显示多个条目-->
+			<select name="province" size=3 multiple>
+				<option value="hubei">湖北省</option>
+				<option value="hunan">湖南省</option>
+				<option value="shanxi">山西省</option>
+				<option value="shandong">山东省</option>
+			</select>
+		<br>
+		简介
+		<!-- 文本域 -->
+		<textarea name="jianjie" cols="10" rows="30"></textarea>
+		<br>
+		<!-- 提交/重置表单按钮 -->
+		<input type="submit" value="注册" /> <!--不能有name，不然也会提交-->
+		<input type="reset"  value="重置" />
+
+	</form>
+</body>
+</html>
