@@ -1,0 +1,28 @@
+#bag{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	background: url(../images/bag.JPG) center no-repeat;
+	background-size: 100%;
+}
+
+#bag.brust{
+	background: url(../images/bag-change.JPG) center no-repeat;
+	background-size: 100%;
+}
+
+#bag-change{
+	width: 200px;
+	border: 2px #000 solid;
+	margin:0 auto 0 auto;
+}
+
+#bag-change div{
+	height: 20px;
+	background: crimson;
+}
+
+#contral{
+	width: 120px;
+	margin: 0 auto;
+}

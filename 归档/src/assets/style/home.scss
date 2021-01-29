@@ -1,0 +1,131 @@
+@charset 'UTF-8';
+@import 'varibles';
+
+.home-list {}
+
+.home-list-item {
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 6px;
+  border-radius: 6px;
+
+  .tit {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid $border-color;
+
+    .tit-txt {
+      display: inline-block;
+      padding: 0 12px;
+      line-height: 38px;
+      color: $primary-blue;
+      border-bottom: 2px solid $primary-blue;
+    }
+
+    .more {
+      float: right;
+      margin-right: 14px;
+      color: #6C7C9A;
+
+      .svg-icon {
+        margin-left: 3px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.home-list-table {
+  padding: 10px 14px;
+
+  table {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    table-layout: fixed;
+
+    td {
+      height: 34px;
+      line-height: 34px;
+      padding: 0 5px;
+    }
+
+    thead {
+      tr {
+        :nth-child(1) {
+          border-radius: 4px 0 0 4px;
+        }
+
+        :last-child {
+          border-radius: 0 4px 4px 0;
+        }
+      }
+
+      td {
+        background: #47A2FF;
+        color: #fff;
+      }
+    }
+
+    tbody {
+      tr {
+        cursor: pointer;
+        border-top: 1px solid $border-color;
+
+        &:hover {
+          background: #F1F7FF;
+          border-color: transparent;
+
+          .txt-ellipse::before {
+            color: $primary-blue;
+          }
+
+
+          .txt,
+          .time,
+          .source {
+            color: $primary-blue;
+          }
+        }
+      }
+
+      .txt-ellipse {
+        width: auto;
+        max-width: calc(100% - 40px);
+        vertical-align: middle;
+
+        &:before {
+          content: '·';
+          display: inline-block;
+          margin: 0 3px;
+          color: #666;
+        }
+      }
+
+      :nth-child(1) {
+        border-top: none;
+      }
+
+      .time,
+      .source {
+        color: #666;
+      }
+
+      .txt {
+        text-align: left;
+
+      }
+
+      .mark {
+        display: inline-block;
+        margin-left: 5px;
+        background: #FF7987;
+        border-radius: 4px 0px 4px 0px;
+        font-size: 10px;
+        line-height: 16px;
+        padding: 0 5px;
+        color: #fff;
+      }
+    }
+  }
+}

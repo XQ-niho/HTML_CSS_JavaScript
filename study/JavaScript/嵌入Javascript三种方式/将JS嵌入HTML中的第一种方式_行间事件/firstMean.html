@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>将JS嵌入HTML中的第一种方式：行间事件</title>
+	<!-- 
+		1、JavaScript是一种事件驱动型语言，通常都是在某个事件发生之后，执行某段代码
+		其中事件包含很多，例如：click鼠标单击事件，mouseover鼠标经过事件等，
+		并却在Javascript都有对应的事件句柄，例如：click对应的事件句柄是onclick,
+		mouseover对应的事件句柄是onmouseover。
+		2、所有的事件句柄都是以标签的属性形式出现。
+	 -->
+</head>
+<body>
+	<input type="button" value="CLICK" onclick="alert('hello');
+												alert('小丑原来是我自己')
+	" />
+</body>
+</html>

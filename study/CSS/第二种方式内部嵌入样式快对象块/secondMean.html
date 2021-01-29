@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML中嵌入CSS第二种方式：嵌入样式块对象块</title>
+
+	<!-- head表签中使用style标签，定义内部样式对象块 -->
+	<style type="text/css">
+		/* 样式语法 
+			选择器{
+				样式名：样式值；
+				样式名：样式值；
+				...
+			}
+			css常见的选择器：
+				id选择器
+				标签选择器
+				class选择器
+		*/
+
+		/* 标签选择器
+			标签名{}
+		 */
+		div{
+			background-color: blue;
+			width: 100px;
+			height: 100px;
+			border-color: crimson;
+			border-style: solid;
+			border-width: 10px;
+		}
+
+		/* id选择器
+			#id{}
+		 */
+		 #myinput{
+			 width: 200px;
+			 height: auto;
+			 border-color: darkkhaki;
+			 border-style: groove;
+			 border-width: 10px;
+		 }
+
+		 /* 类选择器
+		 	.class{}
+			 作用于当前网页中某一类标签
+		  */
+		  .student{
+			  background: darkmagenta;
+			  border-style: solid;
+			  font-size: 18;
+			  color:darksalmon;
+		  }
+	</style>
+</head>
+<body>
+	<div></div>
+
+	<input id="myinput" type="text" />
+
+	<hr color="green">
+
+	<!-- 任何标签都有class属性，class相同的可以看作是同一类标签 -->
+	<span class="student">span标签</span>
+	<p class="student">p标签</p>
+
+	
+
+</body>
+</html>

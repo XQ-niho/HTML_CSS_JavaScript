@@ -1,0 +1,125 @@
+@import 'varibles';
+$direction:top right bottom left;
+
+@for $i from 1 through 4 {
+  @for $j from 1 through 10 {
+    .margin-#{nth($direction,$i)}#{$j * 5} {
+      margin-#{nth($direction,$i)}: $j * 5px !important;
+    }
+
+    .padding#{nth($direction,$i)}#{$j * 5} {
+      padding-#{nth($direction,$i)}: $j * 5px !important;
+    }
+  }
+}
+
+.fl {
+  float: left;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+}
+
+.fr {
+  float: right;
+}
+
+.curp {
+  cursor: pointer;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: block;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.pa {
+  position: absolute;
+}
+
+.fontBold {
+  font-weight: bold !important;
+}
+
+.fontNor {
+  font-weight: normal !important;
+}
+
+.font12 {
+  font-size: 12px !important;
+}
+
+.font14 {
+  font-size: 14px !important;
+}
+
+.font16 {
+  font-size: 16px !important;
+}
+
+.font20 {
+  font-size: 16px !important;
+}
+
+.default-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.default-scroll,
+body {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scroll-bg;
+    border-radius: 3px;
+  }
+}
+
+.noselect {
+  -moz-user-select: none;
+  /* 火狐 */
+  -webkit-user-select: none;
+  /* webkit浏览器 */
+  -ms-user-select: none;
+  /* IE10 */
+  -khtml-user-select: none;
+  /* 早期浏览器 */
+  user-select: none;
+}
+
+.txt-ellipse {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+html {
+  background: $body-bg;
+  font-size: 14px;
+  color: #333333;
+}
+
+.main {
+  position: relative;
+}
+
+.wrap {
+  position: relative;
+  margin: 110px 16px 10px 16px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" , initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<link rel="stylesheet" href="./small_demo_style.css">
+		<title>SmallDemo</title>
+	</head>
+</head>
+<body>
+	<div id="vue-app-demo">
+		
+		<div id="bag" :class="{brust : ended}"></div>
+
+		<div id="bag-change">
+			<div :style="{width : change + '%'}"></div>
+		</div>
+		<!--game contral-->
+		<div id="contral">
+			<button @click="punch" v-show="!ended">Punch</button>
+			<button @click="restart">Restart</button>
+		</div>
+	</div>
+
+	<script src="./small_demo_app.js"></script>
+
+</body>
+</html>
+

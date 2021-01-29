@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" , initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<link rel="stylesheet" href="./style.css">
+	<title>Vue CDN</title>
+</head>
+
+<body>
+	<div id="vue-app">
+
+		<h1>hello,{{name}}</h1>
+
+		<p>你的微信是：{{wechat}}</p>
+
+		<P>{{greet('night')}}</P>
+
+		<p>{{haveLunch()}}</p>
+
+		<h1>Data binding</h1>
+		<P>
+			<!--v-bind:属性绑定；简写形式":"-->
+			<a v-bind:href="website">baidu</a><br>
+			<a :href="website">baidu2</a>
+		</P>
+
+		<P v-html="websiteTag"></P>
+
+		<p><input type="text" v-bind:value="name"></p>
+
+		<!--事件-->
+		<h1>Events</h1>
+		<!--<button @click="age++">add a year</button>
+		<button v-on:click="age--">sub a year</button>-->
+		<button @click="add(1)">add a year</button>
+		<button v-on:click="sub(1)">sub a year</button>
+		<button @dblclick="add(10)">add ten years</button>
+		<p>你的年龄是：{{age}}</p>
+
+		<!--mousemove event-->
+		<div id="canvas" v-on:mousemove="updateXY">
+			{{x}},{{y}}
+		</div>
+
+		<!--事件修饰符-->
+		<P><a @click.prevent="onClick" href="https://www.baidu.com">百度</a></P>
+
+		<!--键盘事件-->
+		<label>姓名</label>
+		<input type="test" v-on:keyup.enter="logName" />
+
+		<label>年龄</label>
+		<input type="test" v-on:keyup="logAge" />
+
+		<br>
+
+		<!--双向数据绑定v-model:input/select/testarea-->
+		<label>工作</label>
+		<input type="test" v-model.lazy.enter="worker"/>
+		<span>{{worker}}</span>
+
+		<!--ref-->
+		<label>地址</label>
+		<input type="text" ref="address" @keyup="getAddress" />
+		<span>{{address}}</span>
+
+		<!--computed计算属性与methods区别-->
+		<button @click="a++">Add to A</button>
+		<button @click="b++">Add to B</button>
+		<p>A - {{a}}</p>
+		<p>B - {{b}}</p>
+		<!--methods-->
+		<!-- <p>Age + A = {{AddToA()}}</p>
+		<p>Age + B = {{AddToB()}}</p> -->
+		<!--compted-->
+		<p>Age + A = {{AddToA}}</p>
+		<p>Age + B = {{AddToB}}</p>
+
+		<!--动态绑定样式 两种方式-->
+		<h1>示例1 属性绑定</h1>
+		<div @click="mrChangeColor = !mrChangeColor" v-bind:class="{changeColor:mrChangeColor}">
+			<span>hello world</span>
+		</div>
+		<h1>示例2 计算属性绑定</h1>
+		<div @click="mrChangeColor = !mrChangeColor" v-bind:class="compClasses">
+			<span>hello world</span>
+		</div>
+
+		<!--v-if/v-else/v-else-if-->
+		<button @click="error = !error">click</button>
+		<p v-if="error">error:</p>
+		<p v-else="success">success</p>
+
+		<!--v-show-->
+		<p v-show="error">网络连接失败：404</p>
+		<p v-show="success">网络连接成功：200</p>
+
+		<!--v-for-->
+		<!-- {{characters[0]}}
+		{{characters[1]}}
+		{{characters[2]}} -->
+		
+		<!--遍历数组-->
+		<!-- <ul>
+			<li v-for="item in characters">
+				{{item}}
+			</li>
+		</ul> -->
+
+		<!-- <ul>
+			<li v-for="(user, index) in users">
+				{{index}} : {{user.id}} : {{user.name}} : {{user.age}}
+			</li>
+		</ul> -->
+
+		<!-- <div v-for="user in users">----遍历一次一个div
+			{{user}}
+		</div> -->
+
+		<!-- <template v-for="(user, index) in users">----一整块
+			{{index}} : {{user.id}} : {{user.name}}
+		</template> -->
+
+		<!--遍历对象-->
+		<template v-for="user in users">
+			<div v-for="(val, name, index) in user">
+				<p>{{index}} : {{name}} : {{val}}</p>
+			</div>
+		</template>
+
+		<!--超链接-->
+		<a href="https://www.baidu.com" target="_self">百度(当前窗口)</a><br>
+		<a href="https://www.baidu.com" target="_blank">百度（新窗口）</a><br>
+		
+		<!-- 一个窗口中的内部窗口 -->
+		<iframe src="https://www.baidu.com"></iframe>
+
+	</div>
+</body>
+
+<script src="./app.js"></script>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML中嵌入JS的第三种方式：引入外部JS独立文件</title>
+</head>
+<body>
+	<script type="text/javascript" src="./third.js">
+		alert("daslfj");//如果是引入外部JS独立文件，这里的将不会执行
+	</script>
+
+	<!-- 单独的js脚本 -->
+	<script type="text/javascript">
+		alert("dsaf");
+	</script>
+</body>
+</html>

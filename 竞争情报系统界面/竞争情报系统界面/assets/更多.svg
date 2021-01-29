@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>更多</title>
+    <defs>
+        <filter x="-7.3%" y="-15.1%" width="114.7%" height="130.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.82745098   0 0 0 0 0.878431373   0 0 0 0 0.960784314  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="深色" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="企业竞争情报信息系统-改后" transform="translate(-1286.000000, -99.000000)">
+            <g id="招投标" filter="url(#filter-1)" transform="translate(690.000000, 122.000000)">
+                <g id="更多" transform="translate(632.000000, 13.000000)">
+                    <rect id="矩形" x="0" y="0" width="14" height="14"></rect>
+                    <path d="M12.8211361,7.07269509 C12.764849,10.2660567 10.1671746,12.8002223 6.89390377,12.855214 C3.62048257,12.9102785 1.02172955,10.1832757 0.966746673,7.07269509 C0.910459608,3.8790254 3.70555865,1.34358324 6.89390377,1.29002944 C10.167325,1.23504011 12.7661682,3.96196777 12.8211361,7.07269509 C12.8318391,7.67667628 13.7929539,7.67772828 13.7823393,7.07269509 C13.7208045,3.59461806 11.0853976,0.80217636 7.56286911,0.386012003 C4.02903121,-0.0315168742 0.770919805,2.53893333 0.117577052,5.87090387 C-0.549090325,9.27077768 1.69060466,12.5684151 5.02810738,13.5434903 C8.44991917,14.5432899 11.9986909,12.6113007 13.3218592,9.48651878 C13.643873,8.72628375 13.7677664,7.89024882 13.7823393,7.07262173 C13.7929461,6.46758854 12.8317536,6.46856571 12.8211285,7.07269685 L12.8211361,7.07269509 Z M6.8321533,9.58620221 L9.06878032,7.40412707 C9.25388884,7.22345856 9.25388884,6.92169392 9.06878032,6.74110025 L6.8321533,4.55902511 C6.39348439,4.13105544 5.7138804,4.79415709 6.15247411,5.22212676 L8.38902593,7.40412854 L8.38902593,6.74110172 L6.15247411,8.92310349 C5.7138819,9.35107316 6.39356109,10.0141014 6.8321533,9.58620514 L6.8321533,9.58620221 Z" id="形状" fill="#6C7C9A" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
