@@ -1,0 +1,148 @@
+<!---my first page-->
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>my first page</title>
+</head>
+
+<body>
+
+    <h1>biaoti1</h1>
+    <h2>biaoti2</h2>
+    <h3>biaoti3</h3>
+
+    <p>CLI (@vue/cli) 是一个全局安装的 npm 包，
+        提供了终端里的 vue 命令。它可以通过 vue create 快速搭建一个新项目，
+        或者直接通过 vue serve 构建新想法的原型。你也可以通过 vue ui 通过一套图形化界面管理你的所有项目。
+        我们会在接下来的指南中逐章节深入介绍</p>
+
+    <hr color="red">
+    <hr color='green'>
+    <hr color=red>
+    <br>
+
+    <pre> 基本标签：
+            <!--
+            <h1>...</h1>~~<h5>...</h5>---标题
+            
+            <p>...</p>---段落
+            
+            <hr coloer = 'red'>---水平线
+            
+            <br>---换行
+            
+            <pre>...</pre>---预留标签(保留原格式)
+
+    <b>...</b>---粗体字
+
+    <i>...</i>---斜体字
+
+    <ins>...</ins>---插入字
+
+    <del>...</del>---删除字
+
+    10<sup>2</sup>---右上标
+
+    m<sub>2</sub>---右下标
+
+    <font color='red' size='5'>...</font>---字体标签
+    -->
+    for (int i = 0; i < 10; i++){ 
+        system.out.println("biaoliugeshi"); 
+    } 
+    </pre> 
+        
+        <b>粗体字</b> <br>
+        <i>斜体字</i> <br>
+        <ins>插入字</ins> <br>
+        <del>删除字</del> <br>
+
+        m<sup>2</sup> <br>
+        n<sub>2</sub> <br>
+
+        <font color="red" size=20>字体标签</font> <br>
+        
+    
+    <br><br>
+    <!--表格-->
+    <table border="1px" width="50%" height="200px" align = "center">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        
+        <tr align="center">
+            <td>1</td>
+            <td>2</td>
+            <td align="center">3</td>
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        
+    </table>
+
+    <br><br>
+
+    <!--单元格合并：colspan:列合并 rowspan:行合并-->
+    <table border="1px" width="50%" align="center">
+        <tr>
+            <td>1</td>
+            <td colspan="2">x</td>  <!--//行合并，删除一个单元格，加上colspan属性 <td colspan="2">xy</td>-->
+            <!--<td>y<td>-->                                             
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td> <!--//列合并，删除下边单元格，加上rowspan属性 <td rowspan="2">3y</td>-->
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <!--<td>3</td>-->
+        </tr>
+        
+    </table>
+
+    <br><br>
+
+    <!--表格th标签：th可以代替td做单元格，th中的内容会自动加粗，会自动居中-->
+	<table border="1px" width="50%">
+		<tr>
+			<!--<td>员工编号</td>--> <th>员工编号</th>
+			<!--<td>员工姓名</td>--> <th>员工姓名</th>
+			<!--<td>员工薪资</td>--> <th>员工薪资</th>   
+		</tr>
+		<tr>
+			<td>3607</td>
+			<td>SMITH</td>
+			<td>800.0</td>
+		</tr>
+		<tr>
+			<td>0527</td>
+			<td>KING</td>
+			<td>3000</td>
+		</tr>
+		
+    </table>
+    
+    <!--超链接：可以是网络中的路径也可以是一个本地路径-->
+    <a href="http://www.baidu.com">百度</a>
+    <br>
+    <a href="https://www.map.baidu">百度地图</a>
+    <br>
+    <a href="https://wwwbaidu.com">
+        <img src="./images/bd.png" alt="" width="200px" title="点击图片到百度" />
+    </a>
+
+
+</body>
+
+</html>
