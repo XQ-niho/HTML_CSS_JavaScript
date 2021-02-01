@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+            javascript当中得函数：
+            函数定义：
+                    function 函数名（形式参数列表）{
+                        函数体；
+                    }
+                例如：
+                    function sum(a, b){
+                        return a+b;
+                    }
+        */
+       //函数必须调用才会执行
+       function sum(a, b) {
+           alert(a + "," + b);
+         }
+
+        //调用sum函数
+        sum();
+
+        //调用sum函数
+        sum(1);
+
+        //调用sum函数
+        sum(1,3);
+
+        //调用sum函数
+        sum(1,2,3);
+
+        //调用sum函数
+        sum("wu", true)
+
+        /*另一种定义
+        函数名 = function（a, b）{
+            return a + b;
+        }*/
+        mysum = function(a, b){
+            return a + b;
+        }
+
+        var result = mysum(10, 20);
+        alert(result);
+
+        //
+
+        function sayHello(username){
+            alert("欢迎" + username + "光临");
+        }
+    </script>
+
+    <input type="button" value="hello" onclick="sayHello('zhangsan')" />
+</body>
+</html>
