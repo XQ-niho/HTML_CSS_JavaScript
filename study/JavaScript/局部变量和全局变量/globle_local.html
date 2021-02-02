@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>全局与局部变量</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var username = "xiaochou";
+
+		function sayHello(){
+			var username = "haha";
+			alert(username);
+		}
+
+		sayHello();
+
+		alert(username);
+
+		function info(){
+			email = "2252453@qq.com";
+			// age;//没赋值则报错
+		}
+
+		info();
+
+		alert("email = " + email);
+
+	</script>
+</body>
+</html>
