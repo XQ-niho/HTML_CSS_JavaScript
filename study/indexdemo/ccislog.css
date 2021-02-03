@@ -1,0 +1,33 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	background: url(../../竞争情报系统界面/assets/头部背景.png);
+	width: 1366px;
+	height: 70px;
+	margin-top: 2px;
+	position: absolute;
+}
+
+#div1{
+	width: 321px;
+	height: 32px;
+	margin-top: 20px;
+	margin-left: 34px;
+}
+
+.backgr{
+	background: url(../../竞争情报系统界面/assets/登录背景.png);
+	width: 1366px;
+	height: 768px;
+}
+
+.log{
+	background: url(../../竞争情报系统界面/assets/登录框.png);
+	width: 404px;
+	height: 400px;
+	top: 205px;
+	left: 795px;
+	position: relative;
+}
